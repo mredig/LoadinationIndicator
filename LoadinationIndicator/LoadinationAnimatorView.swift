@@ -142,6 +142,13 @@ public class LoadinationAnimatorView: UIView {
 		}
 	}
 
+	// MARK: - Misc
+
+	public override func removeFromSuperview() {
+		super.removeFromSuperview()
+		endAnimation()
+	}
+
 }
 
 // MARK: - Actual Animations
