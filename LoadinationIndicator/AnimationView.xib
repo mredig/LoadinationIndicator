@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,8 +56,11 @@
                         <constraint firstAttribute="height" constant="20" id="Bgx-fk-7yA"/>
                     </constraints>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Progress..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCH-rq-1fz">
-                    <rect key="frame" x="145" y="145" width="100" height="20.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Progress..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GCH-rq-1fz">
+                    <rect key="frame" x="20" y="130.5" width="350" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="hrA-me-1Cn"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -67,10 +68,11 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.72205105633802813" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GCH-rq-1fz" secondAttribute="trailing" constant="20" id="Bhs-Zo-EGV"/>
+                <constraint firstItem="GCH-rq-1fz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Kv7-WR-b5t"/>
                 <constraint firstItem="Ig8-RR-4tf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LKC-2Q-k5w"/>
                 <constraint firstItem="Ig8-RR-4tf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ute-GO-ix9"/>
                 <constraint firstItem="GCH-rq-1fz" firstAttribute="top" secondItem="Ig8-RR-4tf" secondAttribute="bottom" constant="32" id="YxV-lK-fjE"/>
-                <constraint firstItem="GCH-rq-1fz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z7w-hT-rgn"/>
                 <constraint firstItem="Ig8-RR-4tf" firstAttribute="top" secondItem="GCH-rq-1fz" secondAttribute="bottom" constant="32" id="m5U-wB-K2j"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

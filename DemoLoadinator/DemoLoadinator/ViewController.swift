@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 	@IBAction func panelPressed(_ sender: UIButton) {
 		animatedLoadingView = LoadinationAnimatorView.fullScreenPanel()
 		animatedLoadingView?.statusLabelPosition = .bottom
-		animatedLoadingView?.statusLabel.text = "Panel mode... ACTIVATE!"
+		animatedLoadingView?.statusLabel.text = "Panel mode... SUPER ACTIVATE WITH EXTRA POWERS AND THRUSTERS!"
 		animatedLoadingView?.animation = .bounce
 		animatedLoadingView?.beginAnimation()
 
