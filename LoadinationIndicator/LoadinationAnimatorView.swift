@@ -84,8 +84,10 @@ public class LoadinationAnimatorView: UIView {
 	public enum Animation {
 		/// A slow, mezmerizing grow and fade animation
 		case growFade
-		/// A cheeky bounce, before the blobs disappear
+		/// A cheeky bounce, before the blobs disappear, one by one.
 		case bounce
+		/// A cheeky bounce, before the blobs disappear, nearly all together.
+		case bounce2
 	}
 
 	// MARK: - Inits
@@ -120,6 +122,8 @@ public class LoadinationAnimatorView: UIView {
 			switch animation {
 			case .bounce:
 				animateBounce(view: blob, delayed: Double(index))
+			case .bounce2:
+				animateBounce(view: blob, delayed: Double(index) * 0.1)
 			case .growFade:
 				animateGrowFade(view: blob, delayed: Double(index) * 1)
 			}

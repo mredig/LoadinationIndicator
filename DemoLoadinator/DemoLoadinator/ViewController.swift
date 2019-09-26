@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 		animatedLoadingView = LoadinationAnimatorView.fullScreenPanel()
 		animatedLoadingView?.statusLabelPosition = .bottom
 		animatedLoadingView?.statusLabel.text = "Panel mode... SUPER ACTIVATE WITH EXTRA POWERS AND THRUSTERS!"
-		animatedLoadingView?.animation = .bounce
+		animatedLoadingView?.animation = .bounce2
 		animatedLoadingView?.beginAnimation()
 
 		var seconds = 4
