@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331167B8236270A900570F0B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331167B7236270A900570F0B /* Colors.xcassets */; };
 		339D65B022BACB9600BD80AB /* LoadinationIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D65A622BACB9500BD80AB /* LoadinationIndicator.framework */; };
 		339D65B522BACB9600BD80AB /* LoadinationIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D65B422BACB9600BD80AB /* LoadinationIndicatorTests.swift */; };
 		339D65B722BACB9600BD80AB /* LoadinationIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 339D65A922BACB9500BD80AB /* LoadinationIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331167B7236270A900570F0B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		339D65A622BACB9500BD80AB /* LoadinationIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadinationIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		339D65A922BACB9500BD80AB /* LoadinationIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadinationIndicator.h; sourceTree = "<group>"; };
 		339D65AA22BACB9500BD80AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				339D65FB22BACD4B00BD80AB /* LoadinationAnimatorView.swift */,
 				339D65FD22BACEAE00BD80AB /* AnimationView.xib */,
 				339D65AA22BACB9500BD80AB /* Info.plist */,
+				331167B7236270A900570F0B /* Colors.xcassets */,
 			);
 			path = LoadinationIndicator;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339D65FE22BACEAE00BD80AB /* AnimationView.xib in Resources */,
+				331167B8236270A900570F0B /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +357,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -361,13 +365,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LoadinationIndicator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.2;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.redeggproductions.LoadinationIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -383,7 +387,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -391,13 +395,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LoadinationIndicator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.2;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.redeggproductions.LoadinationIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

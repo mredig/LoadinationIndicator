@@ -12,14 +12,15 @@ import UIKit
 public class LoadinationAnimatorView: UIView {
 
 	// MARK: - Properties: IB
-	@IBOutlet var contentView: UIView!
-	@IBOutlet var animatedViews: [UIView]!
+	@IBOutlet private var contentView: UIView!
+	@IBOutlet private var animatedViews: [UIView]!
 
 
 	/// Access to the status label. Customize however you'd like. Set to empty to eliminate.
 	@IBOutlet public var statusLabel: UILabel!
-	@IBOutlet var statusBottomAnchor: NSLayoutConstraint!
-	@IBOutlet var statusTopAnchor: NSLayoutConstraint!
+	@IBOutlet public var detailLabel: UILabel!
+	@IBOutlet private var statusBottomAnchor: NSLayoutConstraint!
+	@IBOutlet private var statusTopAnchor: NSLayoutConstraint!
 
 	// MARK: - Properties: Status
 	private var animationStopping: Bool = false
@@ -110,7 +111,6 @@ public class LoadinationAnimatorView: UIView {
 
 		for blob in animatedViews {
 			blob.layer.cornerRadius = blob.frame.height / 2
-			blob.backgroundColor = .white
 		}
 	}
 
