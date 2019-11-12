@@ -64,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		33212A7122BB1C1C00F0E3C9 /* LoadinationIndicator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadinationIndicator.xcodeproj; path = ../LoadinationIndicator.xcodeproj; sourceTree = "<group>"; };
+		3398EDAC237A7DDD00D57DF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		339D65C922BACBDC00BD80AB /* DemoLoadinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLoadinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339D65CC22BACBDC00BD80AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		339D65CE22BACBDC00BD80AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		339D65C022BACBDC00BD80AB = {
 			isa = PBXGroup;
 			children = (
+				3398EDAC237A7DDD00D57DF8 /* README.md */,
 				339D65CB22BACBDC00BD80AB /* DemoLoadinator */,
 				339D65E022BACBDD00BD80AB /* DemoLoadinatorTests */,
 				33212A7022BB1C1400F0E3C9 /* Frameworks */,
