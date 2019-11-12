@@ -43,6 +43,7 @@ class ViewController: UIViewController {
 		animatedLoadingView?.statusLabel.text = "Panel mode... SUPER ACTIVATE WITH EXTRA POWERS AND THRUSTERS!"
 		animatedLoadingView?.animation = .bounce2
 		animatedLoadingView?.beginAnimation()
+		animatedLoadingView?.backgroundStyle = .fxBlur
 
 		var seconds = 4
 		_ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] (timer) in

@@ -10,17 +10,23 @@ import UIKit
 
 /// Class that displays an indeterminate progress indicator with animation.
 public class LoadinationAnimatorView: UIView {
+	public enum BackgroundStyle {
+		case fxBlur
+		case color
+	}
 
 	// MARK: - Properties: IB
-	@IBOutlet private var contentView: UIView!
+	@IBOutlet private weak var contentView: UIView!
 	@IBOutlet private var animatedViews: [UIView]!
 
-
 	/// Access to the status label. Customize however you'd like. Set to empty to eliminate.
-	@IBOutlet public var statusLabel: UILabel!
-	@IBOutlet public var detailLabel: UILabel!
-	@IBOutlet private var statusBottomAnchor: NSLayoutConstraint!
-	@IBOutlet private var statusTopAnchor: NSLayoutConstraint!
+	@IBOutlet public weak var statusLabel: UILabel!
+	@IBOutlet public weak var detailLabel: UILabel!
+	@IBOutlet private weak var statusBottomAnchor: NSLayoutConstraint!
+	@IBOutlet private weak var statusTopAnchor: NSLayoutConstraint!
+
+	@IBOutlet private weak var bgFxView: UIVisualEffectView!
+	@IBOutlet private weak var bgColorView: UIView!
 
 	// MARK: - Properties: Status
 	private var animationStopping: Bool = false
@@ -56,14 +62,19 @@ public class LoadinationAnimatorView: UIView {
 			}
 		}
 	}
+	public var backgroundStyle: BackgroundStyle = .color {
+		didSet {
+			updateViews()
+		}
+	}
 
-	/// Access to the background color property.
+	/// Access to the background color property. Only used if background style is color.
 	public override var backgroundColor: UIColor? {
 		get {
-			return contentView.backgroundColor
+			return bgColorView.backgroundColor
 		}
 		set {
-			contentView.backgroundColor = newValue
+			bgColorView.backgroundColor = newValue
 		}
 	}
 
@@ -109,8 +120,23 @@ public class LoadinationAnimatorView: UIView {
 		contentView.frame = bounds
 		addSubview(contentView)
 
+		bgColorView.isHidden = true
+
 		for blob in animatedViews {
 			blob.layer.cornerRadius = blob.frame.height / 2
+		}
+
+		updateViews()
+	}
+
+	private func updateViews() {
+		bgColorView.isHidden = true
+		bgFxView.isHidden = true
+		switch backgroundStyle {
+		case .color:
+			bgColorView.isHidden = false
+		case .fxBlur:
+			bgFxView.isHidden = false
 		}
 	}
 
