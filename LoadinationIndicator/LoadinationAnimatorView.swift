@@ -250,8 +250,9 @@ extension LoadinationAnimatorView {
 	/// - Returns: Reference to LoadinationAnimatorView that will cover the whole screen
 	public static func fullscreenOverlay() -> LoadinationAnimatorView? {
 		guard let rootView = UIApplication.shared.delegate?.window??.rootViewController?.view else { return nil }
+		guard let window = rootView.window else { return nil }
 		let animationView = LoadinationAnimatorView(frame: rootView.frame)
-		rootView.addSubview(animationView)
+		window.addSubview(animationView)
 		return animationView
 	}
 
