@@ -114,7 +114,7 @@ public class LoadinationAnimatorView: UIView {
 	}
 
 	private func commonInit() {
-		let bundle = Bundle.init(for: type(of: self))
+		let bundle = Bundle.module
 		let nib = UINib(nibName: "AnimationView", bundle: bundle)
 		nib.instantiate(withOwner: self, options: nil)
 		contentView.frame = bounds
